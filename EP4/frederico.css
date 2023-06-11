@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+}
+/*---------------------------------------------------------------------------*/
+
+
+/*-------------------------HEADER-------------------------*/
+header {
+    position: relative;
+    background-color: #92450D;
+} /*Esse é o cabeçalho da página.*/
+
+.logohead {
+    position: absolute;
+    width: 5%;
+    top: 10%;
+    left: 3%;
+}
+
+nav {
+    position: absolute;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #ffffff;
+} /*Esses são os links do header. Usei para modificar a fonte dos links.*/
+
+a {
+    color: #ffffff;
+} /*Essa é a cor do link da página na qual me encontro (que apareceria em azul).*/
+
+ul {
+    display: flex;
+}
+li {
+    margin: 1.5%;
+    font-weight: bold;
+} /*Esses também são os links do header. Usei para mudar a forma em que os links estavam posicionados.*/
+
+.Home {
+    
+    margin-left: 3%;
+    padding: 1%;
+    border-radius: 8px
+} /*Esse é o link "Home" presente no header.*/
+.Home:hover {
+    background-color: #71350A;
+}
+
+.Carrinho {
+    margin-left: 2.5%;
+    padding: 1%;
+    border-radius: 8px
+} /*Esse é o link "Carrinho" presente no header.*/
+.Carrinho:hover {
+    background-color: #71350A;
+}
+
+.Cadastro {
+    margin-left: 2.5%;
+    padding: 1%;
+    border-radius: 8px
+} /*Esse é o link "Cadastre-se" presente no header.*/
+.Cadastro:hover {
+    background-color: #71350A;
+}
+/*-------------------------HEADER-------------------------*/
+
+
+/*-------------------------BODY-------------------------*/
+body {
+    background-color: #101010;
+}
+/*-------------------------BODY-------------------------*/
