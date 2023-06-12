@@ -6,64 +6,51 @@
 
 /*-------------------------HEADER-------------------------*/
 header {
+    height: 85px;
     position: relative;
     background-color: #92450D;
 } /*Esse é o cabeçalho da página.*/
 
 .logohead {
     position: absolute;
-    width: 5%;
-    top: 10%;
+    width: 5.5%;
+    top: 6%;
     left: 3%;
+}
+.logonome {
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+    left: 8.3%;
+    top: 35%;
 }
 
 nav {
     position: absolute;
+    top: 40%;
+    right: 3%;
 }
 
-nav a:link {
+nav a {
     text-decoration: none;
     color: #ffffff;
-} /*Esses são os links do header. Usei para modificar a fonte dos links.*/
+    margin: 15px;
+}
 
-a {
-    color: #ffffff;
-} /*Essa é a cor do link da página na qual me encontro (que apareceria em azul).*/
-
-ul {
+nav ul {
     display: flex;
+    list-style: none;
 }
-li {
-    margin: 1.5%;
+
+header li {
     font-weight: bold;
-} /*Esses também são os links do header. Usei para mudar a forma em que os links estavam posicionados.*/
-
-.Home {
-    
-    margin-left: 3%;
-    padding: 1%;
-    border-radius: 8px
-} /*Esse é o link "Home" presente no header.*/
-.Home:hover {
-    background-color: #71350A;
 }
-
-.Carrinho {
-    margin-left: 2.5%;
-    padding: 1%;
-    border-radius: 8px
-} /*Esse é o link "Carrinho" presente no header.*/
-.Carrinho:hover {
+header li:hover {
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #71350A;
-}
-
-.Cadastro {
-    margin-left: 2.5%;
-    padding: 1%;
-    border-radius: 8px
-} /*Esse é o link "Cadastre-se" presente no header.*/
-.Cadastro:hover {
-    background-color: #71350A;
+    border-radius: 8px;
 }
 /*-------------------------HEADER-------------------------*/
 
