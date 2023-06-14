@@ -33,14 +33,14 @@ footer{
 
 /*-------------------------HEADER-------------------------*/
 header {
-    height: 85px;
+    min-height: 100px;
     position: relative;
     background-color: #92450D;
 } /*Esse é o cabeçalho da página.*/
 
 .logohead {
     position: absolute;
-    width: 5.5%;
+    width: 85px;
     top: 6%;
     left: 3%;
 }
@@ -107,12 +107,7 @@ header li:hover {
 }
 
 .separacao {
-    position: absolute;
-    right: 11%;
-    top: 34.5%;
-    background-color: #70350A;
-    width: 2px;
-    height: 30px;
+    color: #70350A;
 }
 /*-------------------------HEADER-------------------------*/
 
@@ -154,8 +149,8 @@ aside {
 }
 .textoaside {
     font-size: 90%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 /*----------ASIDE----------*/
 
