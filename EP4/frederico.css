@@ -5,7 +5,7 @@
 
 
 /*-------------------------GRID-------------------------*/
-body{
+#indexfnaf body{
     display: grid;
     grid-template-areas: 
         "cab cab cab"
@@ -14,6 +14,36 @@ body{
     grid-gap: 5px;
     grid-template-columns: 20% auto auto;
     grid-template-rows: auto 1000px auto;
+}
+#produtofnaf body {
+        display: grid;
+        grid-template-areas: 
+            "cab cab cab"
+            "pri pri pri"
+            "rod rod rod";
+        grid-gap: 5px;
+        grid-template-columns: 20% auto auto;
+        grid-template-rows: auto 1000px auto;
+}
+#cadastrofnaf body {
+    display: grid;
+        grid-template-areas: 
+            "cab cab cab"
+            "pri pri pri"
+            "rod rod rod";
+        grid-gap: 5px;
+        grid-template-columns: 20% auto auto;
+        grid-template-rows: auto 1000px auto;
+}
+#carrinhofnaf body {
+    display: grid;
+        grid-template-areas: 
+            "cab cab cab"
+            "pri pri pri"
+            "rod rod rod";
+        grid-gap: 5px;
+        grid-template-columns: 20% auto auto;
+        grid-template-rows: auto 1000px auto;
 }
 
 header{
@@ -36,6 +66,7 @@ header {
     min-height: 100px;
     position: relative;
     background-color: #92450D;
+    margin-bottom: 2%;
 } /*Esse é o cabeçalho da página.*/
 
 .logohead {
@@ -81,7 +112,7 @@ nav ul {
 header li {
     font-weight: bold;
 }
-header li:hover {
+.Home:hover, .Carrinho:hover, .Cadastro:hover {
     background-color: #70350A;
     border-radius: 8px;
 }
@@ -112,21 +143,29 @@ header li:hover {
 /*-------------------------HEADER-------------------------*/
 
 
-/*-------------------------BODY-------------------------*/
+/*-------------------------BODY GERAL-------------------------*/
 body {
     background-color: #101010;
 }
-/*----------MAIN----------*/
 main {
     color: #ffffff;
-    text-align: center;
+}
+/*-------------------------BODY GERAL-------------------------*/
+
+
+/*-------------------------BODY INDEX-------------------------*/
+
+/*----------MAIN----------*/
+#indexfnaf main {
+    text-align: left;
 }
 .titulomain {
     font-size: 200%;
+    margin-left: 4%;
 }
 /*----------MAIN----------*/
 /*----------ASIDE----------*/
-aside {
+#indexfnaf aside {
     background-color: #191919;
     border: #202020 dashed;
     color: #ffffff;
@@ -139,9 +178,11 @@ aside {
 .topicosaside {
     margin-top: 7px;
     margin-bottom: 7px;
+    color: #D6D6D6;
 }
 .topicosaside2 {
     margin-bottom: 50px;
+    color: #D6D6D6;
 }
 .tituloaside2 {
     font-size: 145%;
@@ -149,12 +190,45 @@ aside {
 }
 .textoaside {
     font-size: 90%;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #D6D6D6;
 }
 /*----------ASIDE----------*/
 
-/*-------------------------BODY-------------------------*/
+/*-------------------------BODY INDEX-------------------------*/
+
+
+/*-------------------------BODY PRODUTO-------------------------*/
+#produtofnaf main {
+    text-align: left;
+}
+.titulomainproduto {
+    font-size: 185%;
+    margin-left: 7%;
+}
+/*-------------------------BODY PRODUTO-------------------------*/
+
+
+/*-------------------------BODY CADASTRO-------------------------*/
+#cadastrofnaf main {
+    text-align: center;
+}
+.titulomaincadastro {
+    font-size: 220%;
+}
+/*-------------------------BODY CADASTRO-------------------------*/
+
+
+/*-------------------------BODY CARRINHO-------------------------*/
+#carrinhofnaf main {
+        text-align: left;
+    }
+.titulomaincarrinho {
+        font-size: 185%;
+        margin-left: 7%;
+}
+/*-------------------------BODY CARRINHO-------------------------*/
 
 
 /*-------------------------FOOTER-------------------------*/
