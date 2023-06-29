@@ -14,7 +14,7 @@
         "rod rod rod";
     grid-gap: 5px;
     grid-template-columns: 20% auto auto;
-    grid-template-rows: auto 730px 400px auto;
+    grid-template-rows: auto auto 400px auto;
 }
 #produtofnaf body {
         display: grid;
@@ -95,17 +95,33 @@ header {
 
 nav {
     position: absolute;
-    top: 42%;
-    right: 3%;
+    top: 50%;
+    right: 0px;
+    transform: translate(-25%, -50%);
 }
 
 nav a {
+    display: block;
     text-decoration: none;
     color: #ffffff;
-    margin: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 10px;
 }
 nav a:hover {
     color: #F8D0B4;
+    background-color: #70350A;
+    border-radius: 15px;
+}
+.separacao {
+    color: #70350A;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 nav ul {
@@ -115,10 +131,6 @@ nav ul {
 
 header li {
     font-weight: bold;
-}
-.Home:hover, .Carrinho:hover, .Cadastro:hover {
-    background-color: #70350A;
-    border-radius: 8px;
 }
 
 .busca {
@@ -141,9 +153,7 @@ header li {
     border-radius: 20px;
 }
 
-.separacao {
-    color: #70350A;
-}
+
 /*-------------------------HEADER-------------------------*/
 
 
@@ -198,6 +208,7 @@ main {
     margin-left: 25px;
     margin-right: 25px;
     color: #D6D6D6;
+    margin-bottom: 5%;
 }
 /*----------ASIDE----------*/
 
