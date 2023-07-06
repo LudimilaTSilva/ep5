@@ -173,9 +173,15 @@ main {
 #indexfnaf main {
     text-align: left;
 }
-.titulomain {
+#indexfnaf .titulomain {
     font-size: 200%;
     margin-left: 4%;
+}
+
+#indexfnaf .elemento_pai {
+    border: red 2px solid;
+    display: flex;
+    flex-wrap: wrap;
 }
 /*----------MAIN----------*/
 /*----------ASIDE----------*/
