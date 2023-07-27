@@ -67,7 +67,7 @@ footer{
 
 /*-------------------------HEADER-------------------------*/
 header {
-    min-height: 100px;
+    min-height: 120px;
     position: relative;
     background-color: #92450D;
     margin-bottom: 4%;
@@ -75,8 +75,8 @@ header {
 
 .logohead {
     position: absolute;
-    width: 85px;
-    top: 6%;
+    width: 245px;
+    top: 2.5%;
     left: 3%;
 }
 .logonome {
@@ -101,6 +101,7 @@ nav {
 }
 
 nav a {
+    font-size: 20px;
     display: block;
     text-decoration: none;
     color: #ffffff;
@@ -136,8 +137,8 @@ header li {
 .busca {
     position: absolute;
     background-color: #70350A;
-    width: 350px;
-    height: 30px;
+    width: 400px;
+    height: 40px;
     border-radius: 20px;
     top: 50%;
     left: 50%;
@@ -145,8 +146,8 @@ header li {
 }
 .lupa {
     float: right;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     margin-top: 2.5px;
     margin-right: 2.5px;
     background-color: #000000;
@@ -182,6 +183,41 @@ main {
     border: red 2px solid;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: blue 2px solid;
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textocard {
+    text-align: center;
+}
+
+.card img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card a {
+    display: block;
+    background-color: #191919;
+    border: #202020 solid;
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 15px;
 }
 /*----------MAIN----------*/
 /*----------ASIDE----------*/
