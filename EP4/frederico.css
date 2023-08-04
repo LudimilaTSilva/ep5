@@ -172,11 +172,10 @@ main {
 
 /*----------MAIN----------*/
 #indexfnaf main {
-    text-align: left;
+    text-align: center;
 }
 #indexfnaf .titulomain {
-    font-size: 200%;
-    margin-left: 4%;
+    font-size: 230%;
 }
 
 #indexfnaf .elemento_pai {
@@ -185,6 +184,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .card {
@@ -218,6 +218,17 @@ main {
     color: aliceblue;
     text-align: center;
     border-radius: 15px;
+}
+
+.card button {
+    color: #ffffff;
+    font-size: 15px;
+    background-color: #191919;
+    border: #202020 solid;
+    border-radius: 15px;
+    width: 110px;
+    height: 33px;
+
 }
 /*----------MAIN----------*/
 /*----------ASIDE----------*/
