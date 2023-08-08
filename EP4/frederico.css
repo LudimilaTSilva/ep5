@@ -14,7 +14,7 @@
         "rod rod rod";
     grid-gap: 5px;
     grid-template-columns: 20% auto auto;
-    grid-template-rows: auto auto 400px auto;
+    grid-template-rows: auto auto 675px auto;
 }
 #produtofnaf body {
         display: grid;
