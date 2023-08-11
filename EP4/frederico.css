@@ -14,7 +14,7 @@
         "rod rod rod";
     grid-gap: 5px;
     grid-template-columns: 20% auto auto;
-    grid-template-rows: auto auto 675px auto;
+    grid-template-rows: auto auto 470px auto;
 }
 #produtofnaf body {
         display: grid;
@@ -161,6 +161,7 @@ header li {
 /*-------------------------BODY GERAL-------------------------*/
 body {
     background-color: #101010;
+    font-family: 'REM', sans-serif;
 }
 main {
     color: #ffffff;
@@ -179,7 +180,7 @@ main {
 }
 
 #indexfnaf .elemento_pai {
-    border: red 2px solid;
+    /*border: red 2px solid;*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -188,7 +189,7 @@ main {
 }
 
 .card {
-    border: blue 2px solid;
+    /*border: blue 2px solid;*/
     width: 200px;
     height: 300px;
     margin: 20px;
@@ -196,6 +197,10 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.card h1 {
+    font-size: 25px;
 }
 
 .textocard {
