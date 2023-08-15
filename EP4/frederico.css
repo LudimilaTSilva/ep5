@@ -73,7 +73,7 @@ footer{
             "rod rod rod";
         grid-gap: 5px;
         grid-template-columns: 20% auto auto;
-        grid-template-rows: auto auto 470px auto;
+        grid-template-rows: auto auto 1220px auto;
     }
 }
 /*-------------------------GRID TABLET-------------------------*/
@@ -259,16 +259,13 @@ main {
 }
 
 #indexfnaf .elemento_pai {
-    /*border: red 2px solid;*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
 }
 
 .card {
-    /*border: blue 2px solid;*/
     width: 200px;
     height: 300px;
     margin: 20px;
@@ -350,6 +347,40 @@ main {
 /*----------ASIDE----------*/
 
 /*-------------------------BODY INDEX-------------------------*/
+/*-------------------------BODY INDEX TABLET-------------------------*/
+@media only screen and (max-width: 820px) {
+    /*----------MAIN----------*/
+    #indexfnaf .elemento_pai {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    /*----------MAIN----------*/
+    /*----------ASIDE----------*/
+    #indexfnaf aside {
+        background-color: #191919;
+        border: #202020 dashed;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .tituloaside2 {
+        font-size: 145%;
+        margin-bottom: 7px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .textoaside {
+        font-size: 90%;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: #D6D6D6;
+        margin-bottom: 5%;
+    }
+/*----------ASIDE----------*/
+}
+/*-------------------------BODY INDEX TABLET-------------------------*/
 
 
 /*-------------------------BODY PRODUTO-------------------------*/
