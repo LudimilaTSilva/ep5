@@ -1,48 +1,50 @@
-<!DOCTYPE html>
-<html lang="pt" id="cadastrofnaf">
-    <head>
-        <meta charset="UTF-8">
+<!DOCTYPE html> <!-- Avisa que o documento é do formato HTML5. -->
+<html lang="pt" id="cadastrofnaf"> <!-- Abre o código em si, também avisando o navegador que a página está em português. -->
+    <head> <!-- Abre o cabeçalho do código. -->
+        <meta charset="UTF-8"> <!-- Avisa o navegador que a página suporta todos os tipos de caracteres. -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--.-------------------------------------------------------------.-->
+        <!--.----------------------------------------FONTES----------------------------------------.-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!--REM Light 300--><link href="https://fonts.googleapis.com/css2?family=REM:wght@300&display=swap" rel="stylesheet">
         <!--Amatic Bold 700--><link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-        <!--.-------------------------------------------------------------.-->
-        <link rel="stylesheet" href="frederico.css">
-        <title>Fazbear Shop: Login</title>
-    </head>
-    <body>
-        <header>
-            <figure>
-                <a href="indexfnaf.html"> <img src="Imagens/logofreddy.png" class="logohead"> </a>
-            </figure>
-        </header>
+        <!--.----------------------------------------FONTES----------------------------------------.-->
+        <link rel="stylesheet" href="frederico.css"> <!-- Conecta o arquivo CSS ao arquivo HTML. -->
+        <link rel="shortcut icon" href="Imagens/logohead.ico" type="image/x-icon"> <!-- Define o ícone da página. -->
+        <title>Login | Fazbear Shop</title> <!-- Define o título da página. -->
+    </head> <!-- Fecha o cabeçalho do código. -->
 
-    <main>
-        <div class="main-login">
-            <div class="right-login">
-                <div class="card-login">
-                    <h1>Login</h1>
-                    <div class="textfield">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" placeholder="Usuário">
+    <body> <!-- Abre o corpo da página. -->
+        <header> <!-- Abre o cabeçalho da página. -->
+            <figure> <!-- Abre a tag "figure", para a inserção da imagem. Porém, não é obrigatória. -->
+                <a href="indexfnaf.html"><img src="Imagens/logofreddy.png" class="logohead"></a> <!-- A tag "img" adiciona uma imagem à página. Também há a tag "a", de ancoragem, que serve para inserir links na página.  -->
+            </figure> <!-- Fecha a tag "figure". -->
+        </header> <!-- Fecha o cabeçalho da página. -->
+
+        <main> <!-- Abre a tag "main", que é a parte principal da página. -->
+            <div class="main-login"> <!-- Abre a tag "div", que serve como uma divisão no código. -->
+                <div class="right-login">
+                    <div class="card-login">
+                        <h1>Login</h1> <!-- A tag "h1" serve para a inserção de texto num tamanho diferente, usada para títulos. -->
+                        <div class="textfield">
+                            <label for="usuario">Usuário</label> <!-- A tag "label" nomeia um campo, adicionando o nome acima do mesmo. -->
+                            <input type="text" name="usuario" placeholder="Usuário"> <!-- A tag "input" abre um campo para a inserção de dados. -->
+                        </div> <!-- Fecha a tag "div". -->
+                        <div class="textfield">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" placeholder="Senha">
+                        </div>
+                        <button class="button-login">Login</button> <!-- A tag "button", como o próprio nome já diz, cria um botão dentro da página. -->
                     </div>
-                    <div class="textfield">
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha" placeholder="Senha">
-                    </div>
-                    <button class="button-login">Login</button>
                 </div>
             </div>
-        </div>
-    </main>
+        </main> <!-- Fecha a tag "main". -->
 
-    <footer>
-        <div class="um">Fazbear Shop - Artigos e Colecionáveis</div>
-        <div class="dos">Siga-Nos:</div>
-        <div class="tre">Instagram</div>
-        <div class="qua">E-Mail</div>
-    </footer>
-</body>
-</html>
+        <footer> <!-- Abre o rodapé da página. -->
+            <div class="um">Fazbear Shop - Artigos e Colecionáveis</div>
+            <div class="dos">Siga-Nos:</div>
+            <div class="tre">Instagram</div>
+            <div class="qua">E-Mail</div>
+        </footer> <!-- Fecha o rodapé da página. -->
+    </body> <!-- Fecha o corpo da página. -->
+</html> <!-- Fecha o código. -->

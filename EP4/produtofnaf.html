@@ -1,47 +1,99 @@
-<!DOCTYPE html>
-<html lang="pt" id="produtofnaf">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html> <!-- Avisa que o documento é do formato HTML5. -->
+<html lang="pt" id="produtofnaf"> <!-- Abre o código em si, também avisando o navegador que a página está em português. -->
+    <head> <!-- Abre o cabeçalho do código. -->
+        <meta charset="UTF-8"> <!-- Avisa o navegador que a página suporta todos os tipos de caracteres. -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--.-------------------------------------------------------------.-->
-        <link rel="stylesheet" href="frederico.css">
-        <title>produto finafe</title>
-</head>
-<body>
-    <header>
-        <figure>
-            <img src="Imagens/logohead.png" class="logohead">
-        </figure>
-        <div class="logonome">
-            PLACEHOLDER
-            <br>
-            <span class="logonomesmall">Placeholder placeholder</span>
-        </div>
-        <div class="busca">
-                    
-            <figure class="lupa">
-                
-            </figure>
-        </div>
-        <nav>
-            <ul>
-                <li class="Home"><a href="indexfnaf.html">Home</a></li>
-                <li class="Carrinho"><a href="carrinho.html">Carrinho</a></li>
-                <li class="separacao">|</li>
-                <li class="Cadastro"><a href="cadastro.html">Cadastre-se</a></li>
-            </ul>
-        </nav>
-    </header>
+        <!--.----------------------------------------FONTES----------------------------------------.-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--REM Light 300--><link href="https://fonts.googleapis.com/css2?family=REM:wght@300&display=swap" rel="stylesheet">
+        <!--Amatic Bold 700--><link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+        <!--.----------------------------------------FONTES----------------------------------------.-->
+        <link rel="stylesheet" href="frederico.css"> <!-- Conecta o arquivo CSS ao arquivo HTML. -->
+        <link rel="shortcut icon" href="Imagens/logohead.ico" type="image/x-icon"> <!-- Define o ícone da página. -->
+        <title>Pelúcia Five Nights at Freddy's - Freddy | Fazbear Shop</title> <!-- Define o título da página. -->
+    </head> <!-- Fecha o cabeçalho do código. -->
 
-    <main>
-        <div class="titulomainproduto">Pelúcia Freddy Fazbear Five Nights at Freddy's</div>
-    </main>
+    <body> <!-- Abre o corpo da página. -->
+        <header> <!-- Abre o cabeçalho da página. -->
+            <figure> <!-- Abre a tag "figure", para a inserção da imagem. -->
+                <img src="Imagens/logofreddy.png" class="logohead"> <!-- Adiciona uma imagem à página. -->
+            </figure> <!-- Fecha a tag "figure". -->
+            <div class="search-box"> <!-- Abre a tag "div", que serve como uma divisão no código. -->
+                <input class="search-txt" type="text" name="" placeholder="Faça a sua pesquisa"> <!-- Abre um campo para a inserção de dados. -->
+                <a class="search-btn" href="#"> <!-- Tag de ancoragem. Ela adiciona um link à página. -->
+                    <img src="Imagens/lupa.png" alt="" class="lupa">
+                </a> <!-- Fecha a tag de ancoragem. -->
+            </div> <!-- Fecha a tag "div". -->
+            <nav> <!-- Abre a tag "nav". Ela é uma parte da página que liga a outras páginas. -->
+                <ul> <!-- Abre a tag "ul". Abreviação de "unordered list", ou seja, uma lista não ordenada. -->
+                    <li class="Home"><a href="indexfnaf.html">Home</a></li> <!-- Representa um item dentro de uma lista. -->
+                    <li class="Carrinho"><a href="carrinhofnaf.html">Carrinho</a></li>
+                    <li class="separacao">|</li>
+                    <li class="Cadastro"><a href="cadastrofnaf.html">Cadastre-se</a></li>
+                </ul> <!-- Fecha a tag "ul". -->
+            </nav> <!-- Fecha a tag "nav". -->
+        </header> <!-- Fecha o cabeçalho da página. -->
 
-    <footer>
-        <div class="um">projeto feito em html e css</div>
-        <div class="dos">PLACEHOLDER - Placeholder placeholder</div>
-        <div class="tre">cecm tarquinio santos</div>
-        <div class="qua">2b ds</div>
-    </footer>
-</body>
-</html>
+        <main> <!-- Abre a tag "main", que é a parte principal da página. -->
+            <div class="elemento_pai">
+                <!-- card -->
+                <div class="card">
+                    <img src="Imagens/freddyplush.png" alt="">
+                </div>
+                <!-- fim card -->
+                <!-- texto lado -->
+                <div class="infoladopro">
+                    <p class="titulopro"> <!-- Abre a tag "p", que serve para a inserção de texto, sendo um parágrafo. -->
+                        Pelúcia Five Nights at Freddy's - Freddy
+                    </p> <!-- Fecha a tag "p". -->
+                    <p class="precopro">
+                        R$ 30,00
+                    </p>
+                    <p class="descricaopro">
+                        <span class="estoque">Estoque disponível</span> <!-- Abre e fecha a tag "span". Serve para fazer uma divisão no código. -->
+                    </p>
+                    <p class="descricaopro">
+                        Boneco de pelúcia Freddy Fazbear do jogo de terror Five Nights at Freddy's, criado por Scott Cawthon.
+                    </p>
+                </div>
+                <!-- fim texto lado -->
+            </div>
+            <div class="elemento_pai2">
+                <div class="textoembaixo">
+                    <button>Comprar agora</button> <!-- A tag "button", como o próprio nome já diz, cria um botão dentro da página. -->
+                </div>
+            </div>
+            <div class="elemento_pai3">
+                <div class="textoembaixo">
+                    <a href="carrinhofnaf.html"><button>Adicionar ao carrinho</button></a>
+                </div>
+            </div>
+            <div class="elemento_pai4">
+                <div class="textoembaixo">
+                    <p class="especificacoes">
+                        <span class="tituloespec">Especificações:</span>
+                    </p>
+                    <ul class="textoespec">
+                        <li class="listelement1">pipipi popopo, pipipipopopo;</li>
+                        <li class="listelement2">pipipi popopo, pipipipopopo pipipi popopo;</li>
+                        <li class="listelement2">pipipipopopo, pipipipopopo pipipipopopo, pipipi popopo;</li>
+                        <li class="listelement2">pipipi popopo, pipipipopopo pipipi popopo;</li>
+                        <li class="listelement2">pipipi popopo, pipipipopopo;</li>
+                        <li class="listelement2">pipipi popopo, pipipipopopo pipipi popopo;</li>
+                        <li class="listelement2">pipipipopopo, pipipipopopo pipipipopopo, pipipi popopo;</li>
+                        <li class="listelement2">pipipi popopo, pipipipopopo pipipi popopo;</li>
+                        <li class="listelement3">pipipi popopo, pipipipopopo.</li>
+                    </ul>
+                </div>
+            </div>
+        </main> <!-- Fecha a tag "main". -->
+
+        <footer> <!-- Abre o rodapé da página. -->
+            <div class="um">Fazbear Shop - Artigos e Colecionáveis</div>
+            <div class="dos">Siga-Nos:</div>
+            <div class="tre">Instagram</div>
+            <div class="qua">E-Mail</div>
+        </footer> <!-- Fecha o rodapé da página. -->
+    </body> <!-- Fecha o corpo da página. -->
+</html> <!-- Fecha o código. -->

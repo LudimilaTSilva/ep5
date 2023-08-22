@@ -1,49 +1,73 @@
-<!DOCTYPE html>
-<html lang="pt" id="indexfnaf">
-    <head>
-        <meta charset="UTF-8">
+<!DOCTYPE html> <!-- Avisa que o documento é do formato HTML5. -->
+<html lang="pt" id="indexfnaf"> <!-- Abre o código em si, também avisando o navegador que a página está em português. -->
+    <head> <!-- Abre o cabeçalho do código. -->
+        <meta charset="UTF-8"> <!-- Avisa o navegador que a página suporta todos os tipos de caracteres. -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--.-------------------------------------------------------------.-->
+        <!--.----------------------------------------FONTES----------------------------------------.-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!--REM Light 300--><link href="https://fonts.googleapis.com/css2?family=REM:wght@300&display=swap" rel="stylesheet">
         <!--Amatic Bold 700--><link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-        <!--.-------------------------------------------------------------.-->
-        <link rel="stylesheet" href="frederico.css">
-        <title>Fazbear Shop: Artigos e Colecionáveis</title>
-    </head>
-    <body>
-        <header>
-            <figure>
-                <img src="Imagens/logofreddy.png" class="logohead">
-            </figure>
-            <div class="busca">
-                <figure>
-                    <img src="Imagens/lupa.png" alt="">
-                </figure>
-                <input type="text" name="pesquisa" placeholder="Pesquise...">
-            </div>
-            <nav>
-                <ul>
-                    <li class="Home"><a href="indexfnaf.html">Home</a></li>
+        <!--.----------------------------------------FONTES----------------------------------------.-->
+        <link rel="stylesheet" href="frederico.css"> <!-- Conecta o arquivo CSS ao arquivo HTML. -->
+        <link rel="shortcut icon" href="Imagens/logohead.ico" type="image/x-icon"> <!-- Define o ícone da página. -->
+        <title>Fazbear Shop - Artigos e Colecionáveis</title> <!-- Define o título da página. -->
+    </head> <!-- Fecha o cabeçalho do código. -->
+
+    <body> <!-- Abre o corpo da página. -->
+        <header> <!-- Abre o cabeçalho da página. -->
+            <figure> <!-- Abre a tag "figure", para a inserção da imagem. Porém, não é obrigatória. -->
+                <img src="Imagens/logofreddy.png" class="logohead"> <!-- Adiciona uma imagem à página. -->
+            </figure> <!-- Fecha a tag "figure". -->
+            <div class="search-box"> <!-- Abre a tag "div", que serve como uma divisão no código. -->
+                <input class="search-txt" type="text" name="" placeholder="Faça a sua pesquisa"> <!-- Abre um campo para a inserção de dados. -->
+                <a class="search-btn" href="#"> <!-- Tag de ancoragem. Ela adiciona um link à página. -->
+                    <img src="Imagens/lupa.png" alt="" class="lupa">
+                </a> <!-- Fecha a tag de ancoragem. -->
+            </div> <!-- Fecha a tag "div". -->
+            <nav class="navdesk"> <!-- Abre a tag "nav". Ela é uma parte da página que liga a outras páginas. -->
+                <ul> <!-- Abre a tag "ul". Abreviação de "unordered list", ou seja, uma lista não ordenada. -->
+                    <li class="Home"><a href="indexfnaf.html">Home</a></li> <!-- Representa um item dentro de uma lista. -->
                     <li class="Carrinho"><a href="carrinhofnaf.html">Carrinho</a></li>
                     <li class="separacao">|</li>
                     <li class="Cadastro"><a href="cadastrofnaf.html">Cadastre-se</a></li>
-                </ul>
-            </nav>
-        </header>
+                </ul> <!-- Fecha a tag "ul". -->
+            </nav> <!-- Fecha a tag "nav". -->
+        </header> <!-- Fecha o cabeçalho da página. -->
+        <!--.--------------------------------------HEADER MOBILE--------------------------------------.-->
+        <div class="header_mobile">
+            <figure>
+                <img src="Imagens/logofreddy.png" alt="" class="logohead">
+            </figure>
+            <div class="nav_mobile">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="Imagens/menu.png" alt="">
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Cadastro</a></li>
+                        <li><a href="">Produtos</a></li>
+                        <li><a href="">Outra coisa</a></li>
+                        <li><a href="">Sei lá</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--.--------------------------------------HEADER MOBILE--------------------------------------.-->
 
-        <main>
+        <main> <!-- Abre a tag "main", que é a parte principal da página. -->
             <div class="titulomain">Pelúcias</div>
                 <div class="elemento_pai">
                     <!-- card -->
                     <div class="card">
                         <img src="Imagens/freddyplush.png" alt="">
-                        <h1>Pelúcia Freddy Fazbear</h1>
-                        <p class="textocard">
+                        <h1>Pelúcia Freddy Fazbear</h1> <!-- A tag "h1" serve para a inserção de texto num tamanho diferente, usada para títulos. -->
+                        <p class="textocard"> <!-- Abre a tag "p", que serve para a inserção de texto, sendo um parágrafo. -->
                             Pelúcia Five Nights at Freddy's - Freddy 
-                        </p>
-                        <button>Saiba mais</button>
+                        </p> <!-- Fecha a tag "p". -->
+                        <a href="produtofnaf.html"><button>Saiba mais</button></a> <!-- A tag "button", como o próprio nome já diz, cria um botão dentro da página. -->
                     </div>
                     <!-- fim card -->
                     <!-- card -->
@@ -64,7 +88,7 @@
                             Pelúcia Five Nights at Freddy's - Chica
                         </p>
                         <button>Saiba mais</button>
-                    </div><br>
+                    </div>
                     <!-- fim card -->
                     <!-- card -->
                     <div class="card">
@@ -143,8 +167,7 @@
                             <button>Saiba mais</button>
                         <!-- fim card -->
                     </div>
-                </div>
-            </section>
+            </section> <!--Section usado apenas para realizar o scroll da página.-->
 
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -201,27 +224,30 @@
                             <button>Saiba mais</button>
                         <!-- fim card -->
                     </div>
-                </div>
             </section> <!--Section usado apenas para realizar o scroll da página.-->
+        </main> <!-- Fecha a tag "main". -->
 
-        </main>
-        <aside>
+        <aside> <!-- Abre a tag "aside", que é a parte secundária da página. -->
             <div class="tituloaside">Nossos Produtos</div>
             <p class="topicosaside">Pelúcias</p>
             <p class="topicosaside"><a href="#funkopops">Funko Pops</a></p>
             <p class="topicosaside2"><a href="#camisetas">Camisetas</a></p>
+
             <div class="tituloaside2">PROMOÇÕES</div>
-        </aside>
+            <img src="Imagens/freddyplush.png" alt="">
+            <p class="precoind">R$ 30,00</p>
+            <a href="produtofnaf.html"><button>Mais informações</button></a>
+        </aside> <!-- Fecha a tag "aside". -->
+
         <div class="espaso">
             <!--espaso-->
         </div>
 
-        <footer>
+        <footer> <!-- Abre o rodapé da página. -->
             <div class="um">Fazbear Shop - Artigos e Colecionáveis</div>
             <div class="dos">Siga-Nos:</div>
             <div class="tre">Instagram</div>
             <div class="qua">E-Mail</div>
-            <div class="cin">Créditos: Flaticon, Chanut (Lupa na barra de pesquisa)</div>
-        </footer>
-    </body>
-</html>
+        </footer> <!-- Fecha o rodapé da página. -->
+    </body> <!-- Fecha o corpo da página. -->
+</html> <!-- Fecha o código. -->

@@ -1,58 +1,67 @@
-<!DOCTYPE html>
-<html lang="pt" id="carrinhofnaf">
-    <head>
-        <meta charset="UTF-8">
+<!DOCTYPE html> <!-- Avisa que o documento é do formato HTML5. -->
+<html lang="pt" id="carrinhofnaf"> <!-- Abre o código em si, também avisando o navegador que a página está em português. -->
+    <head> <!-- Abre o cabeçalho do código. -->
+        <meta charset="UTF-8"> <!-- Avisa o navegador que a página suporta todos os tipos de caracteres. -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--.-------------------------------------------------------------.-->
+        <!--.----------------------------------------FONTES----------------------------------------.-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!--REM Light 300--><link href="https://fonts.googleapis.com/css2?family=REM:wght@300&display=swap" rel="stylesheet">
         <!--Amatic Bold 700--><link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-        <!--.-------------------------------------------------------------.-->
-        <link rel="stylesheet" href="frederico.css">
-        <title>Fazbear Shop: Carrinho</title>
-    </head>
-    <body>
-        <header>
-            <figure>
-                <img src="Imagens/logofreddy.png" class="logohead">
-            </figure>
-            <div class="busca">
-                    <!--caixa-->
-                <figure class="lupa">
-                    <!--caixa-->
-                </figure>
-            </div>
-            <nav>
-                <ul>
-                    <li class="Home"><a href="indexfnaf.html">Home</a></li>
+        <!--.----------------------------------------FONTES----------------------------------------.-->
+        <link rel="stylesheet" href="frederico.css"> <!-- Conecta o arquivo CSS ao arquivo HTML. -->
+        <link rel="shortcut icon" href="Imagens/logohead.ico" type="image/x-icon"> <!-- Define o ícone da página. -->
+        <title>Carrinho | Fazbear Shop</title> <!-- Define o título da página. -->
+    </head> <!-- Fecha o cabeçalho do código. -->
+
+    <body> <!-- Abre o corpo da página. -->
+        <header> <!-- Abre o cabeçalho da página. -->
+            <figure> <!-- Abre a tag "figure", para a inserção da imagem. -->
+                <img src="Imagens/logofreddy.png" class="logohead"> <!-- Adiciona uma imagem à página. -->
+            </figure> <!-- Fecha a tag "figure". -->
+            <div class="search-box"> <!-- Abre a tag "div", que serve como uma divisão no código. -->
+                <input class="search-txt" type="text" name="" placeholder="Faça a sua pesquisa"> <!-- Abre um campo para a inserção de dados. -->
+                <a class="search-btn" href="#"> <!-- Tag de ancoragem. Ela adiciona um link à página. -->
+                    <img src="Imagens/lupa.png" alt="" class="lupa">
+                </a> <!-- Fecha a tag de ancoragem. -->
+            </div> <!-- Fecha a tag "div". -->
+            <nav> <!-- Abre a tag "nav". Ela é uma parte da página que liga a outras páginas. -->
+                <ul> <!-- Abre a tag "ul". Abreviação de "unordered list", ou seja, uma lista não ordenada. -->
+                    <li class="Home"><a href="indexfnaf.html">Home</a></li> <!-- Representa um item dentro de uma lista. -->
                     <li class="Carrinho"><a href="carrinhofnaf.html">Carrinho</a></li>
                     <li class="separacao">|</li>
                     <li class="Cadastro"><a href="cadastrofnaf.html">Cadastre-se</a></li>
-                </ul>
-            </nav>
-        </header>
+                </ul> <!-- Fecha a tag "ul". -->
+            </nav> <!-- Fecha a tag "nav". -->
+        </header> <!-- Fecha o cabeçalho da página. -->
 
-        <main>
-            <div class="titulomaincarrinho">Seu Carrinho</div>
+        <main> <!-- Abre a tag "main", que é a parte principal da página. -->
+            <div class="titulomaincarrinho">Seu Carrinho</div> <!-- Abre e fecha a tag "div". -->
                 <div class="elemento_pai">
                     <!-- card -->
                     <div class="card">
                         <img src="Imagens/freddyplush.png" alt="">
-                        <button>Informações do produto</button>
+                        <a href="produtofnaf.html"><button>Informações do produto</button></a> <!-- A tag "button", como o próprio nome já diz, cria um botão dentro da página. Também há a tag "a", de ancoragem, que serve para inserir links na página.  -->
                     </div>
                     <!-- fim card -->
+                    <!-- texto lado -->
                     <div class="infoladocar">
-                        <p class="titulocar">
+                        <p class="titulocar"> <!-- Abre a tag "p", que serve para a inserção de texto, sendo um parágrafo. -->
                             Pelúcia Five Nights at Freddy's - Freddy
-                        </p>
+                        </p> <!-- Fecha a tag "p". -->
                         <p class="descricaocar">
                             Boneco de pelúcia Freddy Fazbear do jogo de terror Five Nights at Freddy's, criado por Scott Cawthon.
                         </p>
                         <p class="descricaocar">
-                            <span class="precocar">R$ 40,00</span>
+                            <span class="precocar">R$ 30,00</span> <!-- Abre e fecha a tag "span". Serve para fazer uma divisão no código. -->
                         </p>
                         <button>Comprar agora</button>
+                        <!-- fim texto lado -->
+                    </div>
+                    <div class="quantidade">
+                        <p>
+                            Quantidade: <span class="quantnum">1</span>
+                        </p>
                     </div>
                 </div>
                 <div class="elemento_pai">
@@ -75,15 +84,20 @@
                         </p>
                         <button>Comprar agora</button>
                     <!-- fim texto lado -->
+                    </div>
+                    <div class="quantidade">
+                        <p>
+                            Quantidade: <span class="quantnum">1</span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </main>
+        </main> <!-- Fecha a tag "main". -->
 
-    <footer>
-        <div class="um">Fazbear Shop - Artigos e Colecionáveis</div>
-        <div class="dos">Siga-Nos:</div>
-        <div class="tre">Instagram</div>
-        <div class="qua">E-Mail</div>
-    </footer>
-</body>
-</html>
+        <footer> <!-- Abre o rodapé da página. -->
+            <div class="um">Fazbear Shop - Artigos e Colecionáveis</div>
+            <div class="dos">Siga-Nos:</div>
+            <div class="tre">Instagram</div>
+            <div class="qua">E-Mail</div>
+        </footer> <!-- Fecha o rodapé da página. -->
+    </body> <!-- Fecha o corpo da página. -->
+</html> <!-- Fecha o código. -->
