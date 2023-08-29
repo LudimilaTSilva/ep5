@@ -74,13 +74,16 @@ footer{
     #indexfnaf body{
         display: grid;
         grid-template-areas: 
-            "cam cam cam"
-            "sec pri pri"
-            "esp pri pri"
-            "rod rod rod";
+            "cam"
+            "pri"
+            "pri"
+            "rod";
         grid-gap: 5px;
-        grid-template-columns: 20% auto auto;
+        grid-template-columns: auto;
         grid-template-rows: auto auto auto auto;
+    }
+    header{
+        display: none;
     }
 }
 /*-------------------------GRID CELULAR-------------------------*/
@@ -301,14 +304,10 @@ header li {
 /*-------------------------HEADER CELULAR-------------------------*/
 @media only screen and (max-width: 480px) {
     * {
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
     }
-
-    /*header {
-        min-height: 90px;
-        position: relative;
-        background-color: #92450D;
-    } /*Esse é o cabeçalho da página.*/
     
     .header_mobile {
         min-height: 90px;
@@ -324,23 +323,15 @@ header li {
         left: 3%;
     }
 
-    .nav_mobile {
-        position: absolute;
-        right: 0px;
-        top: 20%;
-    }
-
-    .nav_mobile ul {
+    .nav_mobile ul{
         list-style: none;
         border: pink solid 2px;
         position: absolute;
         top: 50px;
-        right: 0px;
         width: 100%;
     }
-    .nav_mobile img {
-        position: absolute;
-        width: 15px;
+    .nav_mobile img{
+        width: 40px;
         border: gray solid 2px;
     }
     
@@ -348,28 +339,28 @@ header li {
          display: none;
     }
     
-    .nav_mobile nav {
+    .nav_mobile nav{
         border: red solid;
         width: 350px;
         height: 100vh;
         position: absolute;
-        right: -400px;
+        left: -350px;
         transition: all 0.3s;
     }
     
-    .nav_mobile a {
+    .nav_mobile a{
         border: green solid;
         display: block;
         padding: 20px 5px;
         text-decoration: none;
     }
     
-    .nav_mobile label {
+    .nav_mobile label{
         position: absolute;
         z-index: 1;
     }
-    .nav_mobile input[type="checkbox"]:checked ~ nav {
-        transform: translateX(-350px);
+    .nav_mobile input[type="checkbox"]:checked ~ nav{
+        transform: translateX(350px);
     }
 
     /*.nav_mobile nav {
@@ -417,6 +408,9 @@ header li {
     .navdesk {
         display: none;
     }
+    .navdesk img {
+        display: none;
+    }
     .search-box {
         display: none;
     }
@@ -427,6 +421,10 @@ header li {
         display: none;
     }
     .lupa {
+        display: none;
+    }
+    /*-------------------*/
+    aside {
         display: none;
     }
     /*----------HIDDEN----------*/
@@ -763,6 +761,7 @@ main {
     /*----------MAIN----------*/
     #indexfnaf main {
         text-align: center;
+        border: green solid;
     }
     #indexfnaf .titulomain {
         margin-top: 4%;
@@ -776,6 +775,7 @@ main {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        border: red solid;
     }
 
     #indexfnaf .elemento_pai2 {
@@ -784,6 +784,7 @@ main {
         align-items: center;
         justify-content: center;
         margin-bottom: 4%;
+        border: red solid;
     }
 
     .card {
